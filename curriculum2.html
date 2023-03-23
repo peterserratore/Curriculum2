@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum 2</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Sofia'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Sofia", sans-serif}
+        h1,h2,h3,h4,h5,h6 { color:red}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 25%;}
+.col-2 {width: 50%;}
+.col-3 {width: 25%; display:none;}
+
+/* Estilo del encabezado */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  color:red;
+}
+
+.button {
+ background-color: #4CAF50;
+ border: none;
+ color: white;
+ padding: 1px 2px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 2px 1px;
+ cursor: pointer;
+}
+
+.button2 {
+  background-color: #4CAF50;
+  border: 3px solid red;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 80px;
+  cursor: pointer;
+  width: 20%;
+}
+      
+
+/* Estilo del pie de pagina */ 
+.footer {
+  background-color: greenyellow;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+ul.a {
+    list-style-type: square;
+    text-align: left;
+    font-size: 20px;
+    display:none
+}
+
+ol.b {
+    color: blue;
+    text-align: left;
+    font-size: 20px;
+    display:none
+}
+dl {
+    font-size: 20px;
+}
+
+dt {
+    color: crimson;
+}
+
+p {
+color: black;
+}
+</style>
+</head>
+<body>
+       
+<div class="header">
+    <h1>CURRICULUM VITAE</h1>
+    <img src="https://randomuser.me/api/portraits/men/21.jpg" style="width:25%" alt="Foto">
+    <h1>PEDRO SERRATORE</h1>
+    <p>MAESTRO MAYOR DE OBRAS CON VASTA EXPERIENCIA EN EJECUCIÓN DE OBRAS</p>
+  </div>
+
+  <div>
+    <button class="button2" onclick="document.getElementById('a').style.display='block'">¡Datos personales!</button>
+    <button class="button2" onclick="document.getElementById('b').style.display='block'">¡Experiencia laboral!</button>
+    <button class="button2" onclick="document.getElementById('3').style.display='block'">¡Estudios cursados!</button>
+</div>
+  
+
+<div class="row">
+    <div class="col-1">
+
+
+    <ul id=a class="a">
+      <h2>DATOS PERSONALES</h2>
+      <li>Apellido y nombre:<br> Serratore Pedro</li>
+      <li>Documento:<br> DNI ..............</li>
+      <li>Fecha Nacimiento:<br> 21 Marzo 1964</li>
+      <li>Nacionalidad:<br> Argentino</li>
+      <li>Domicilio:<br> J. Canning 255 Rosario</li>
+      <li>Tel. de contacto:<br>Cel. 341-3702359</li>
+    </ul>
+    </div>
+    <div class="col-2">
+
+  <ol id=b class="b">
+
+    <h2>EXPERIENCIA LABORAL</h2>
+
+    <li>Ing. Pelleginet S.A.:Capataz general-1997/2003</li>
+
+  <a href="https://www.pellegrinet.com/" class="button">WEB</a>
+
+    <li>Dinale S.A.: Capataz-2004/2005</li>
+    <a href="http://www.dinalerosario.com.ar/" class="button">WEB</a>
+    <li>COPERSA S.A.: Capataz de hormigón-2005</li>
+    <a href="http://copersa.com.ar/" class="button">WEB</a>
+
+    <li>Ledesma-Porta Construcciones.:Jefe de obra-2006/2011</li>
+
+    <li>Edilizia S.A.:Jefe de Obra-2012/2014</li>
+    <a href="https://edilizia.com.ar/" class="button">WEB</a>
+    <li>Pecam S.A.:Capataz de obra-2014/2015</li>
+    <a href="https://pecam.com.ar/" class="button">WEB</a>
+    <li>LP Diseño y construcción S.A.: Jefe de Obra-2016/2022</li>
+  
+    <li>MAP Arquitectos S.A.:Jefe de Obra-2022/Actualidad</li>
+    <a href="https://www.maparquitectos.com.ar/" class="button">WEB</a>
+
+  </ol>
+    </div>
+    
+    <div id=3 class="col-3">
+      <h2>ESTUDIOS CURSADOS</h2>
+<dl>
+  <dt>ENET N° 5 Ovidio Lagos</dt>
+  <dd> - Título de Maestro M. Obras</dd>
+  <dt>Facultad Arquitectura UNR</dt>
+  <dd> - Carrera no finalizada</dd>
+  <dt>Univ. Tecnologica</dt>
+  <dd> - Curso AutoCAd</dd>
+  <dd> - Curso armado y rep. de PC</dd>
+</dl>
+    </div>
+  </div>
+</div> 
+  <div class="footer">
+    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>J. Canning 255. Rosario</p>
+    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Mail: peter.41@hotmail.com</p>
+    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Tel. Cel.: 341-3702359</p>
+
+  </div> 
+</body>
+</html>
